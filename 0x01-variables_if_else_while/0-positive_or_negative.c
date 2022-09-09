@@ -9,7 +9,7 @@
  *
  *           * Return: Program always return 0(success)
  *
- *             */
+ */
 
 int main(void)
 {
