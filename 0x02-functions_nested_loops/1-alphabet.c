@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+#include <ctype.h>
 /**
  *  * print_alphabet - prints the alphabets in lower case
  *   * Return: returns 0 if successful
@@ -15,5 +16,5 @@ void  print_alphabet(void)
 		}
 		
 		return (0);
-}
+
 
