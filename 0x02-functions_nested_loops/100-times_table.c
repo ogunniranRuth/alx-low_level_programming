@@ -1,5 +1,6 @@
 #include "main.h"
-/** print_times_table - print time table of n
+/**
+ *print_times_table - print time table of n
  * @n: take numebr input
  */
 void print_times_table(int n)
