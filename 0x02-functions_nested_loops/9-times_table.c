@@ -15,9 +15,6 @@ void times_table(void)
 		_putchar(48);
 		for (mult = 1; mult <= 9; ++mult)
 		{
-			_putchar(48);
-			for (mult = 1; mult <= 9; ++mult)
-			{
 				_putchar(',');
 				_putchar(' ');
 
@@ -32,8 +29,7 @@ void times_table(void)
 					_putchar((prod / 10) + 48); /* get the first digit*/
 
 				_putchar((prod % 10) + 48); /* get the second digit*/
-			}
-			_putchar('\n');
 		}
+			_putchar('\n');
 	}
 }
