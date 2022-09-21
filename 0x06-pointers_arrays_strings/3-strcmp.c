@@ -5,9 +5,9 @@
 * @s1: parameter for string one
 * @s2: parameter for string two
 * Return:
-* 	returns zere if s1 == s2
-* 	returns negative value if s1 < s2
-* 	returns positive value if s1 > s2
+* returns zere if s1 == s2
+* returns negative value if s1 < s2
+* returns positive value if s1 > s2
 */
 
 int _strcmp(char *s1, char *s2)
@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 
 	while (1)
 	{
-		if (s1[i] == '\0' && s2[i] == '\0'
+		if (s1[i] == '\0' && s2[i] == '\0')
 				break;
 				else if (s1[i] == '\0')
 				{
