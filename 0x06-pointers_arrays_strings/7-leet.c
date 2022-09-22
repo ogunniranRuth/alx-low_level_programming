@@ -5,23 +5,24 @@
 * Return: string for success
 */
 
-char *leet(char *x)
+char *leet(char *s)
 {
-	int a = 0, b, l = 5;
-	char tr[5] = {'A', 'E', 'O', 'T', 'L'};
-	char trw[5] = {'4', '3', '0', '7', '1'};
+	int count = 0, i;
+	int lower_case[] = {97, 101, 111, 116, 108};
+	int upper_case[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	while (x[a])
+	while (*(s + count) != '\0')
 	{
-		b = 0;
-
-		while (b < 1)
+		for (i = 0; i < 5; i++)
 		{
-			if (x[a] == tr[b] || x[a] - 32 == tr[b])
-				x[a] = trw[b];
-			b++;
+			if (*(s + count) == lower_case[i] || *(s + count) == upper_case[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
 		}
-		a++;
+		count++;
 	}
-	return (x);
+	return (s);
 }
