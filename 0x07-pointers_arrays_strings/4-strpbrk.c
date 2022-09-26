@@ -2,7 +2,7 @@
 /**
 * _strpbrk - matches any character speicified
 * @s: this is the C string to be scanned.
-* @accet: character in strl that matchs of on the character
+* @accept: character in strl that matchs of on the character
 * Return: string s that matched any character specified.
 */
 
