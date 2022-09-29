@@ -5,8 +5,8 @@
  *
  * * followed by a new line
  *
- * * @s: string to be printed
- * */
+ * @s: string to be printed
+*/
 
 void _put_recursion(char *s)
 {
