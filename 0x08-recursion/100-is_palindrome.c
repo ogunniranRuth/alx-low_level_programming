@@ -7,42 +7,47 @@
 
 int _strlen_recursion(char *s)
 {
-	if (!*s)
+	if (*s)
 	{
-		return (0);
-	}
-	return (1 + _strlen_recursion(++s));
-}
-
-/**
-* p1 - check if string is palindrome
-* @s: pointer to string
-* @l: position
-* Return: boolean
-*/
-
-int p1(char *s, int l)
-{
-	if (l < 1)
-	{
-		return (1);
-	}
-	if (*s == *(s + 1))
-	{
-		return (p1(s + 1, l - 2));
+		return (1 + _strlen_recursion(s + 1));
 	}
 	return (0);
 }
 
 /**
+* niPalindrome - check if string is palindrome
+* @s: pointer to string
+* @fi: first index
+* @li: last index
+* Return: 0 if not, 1 if true
+*/
+
+int niPalindrome(char *s, int fi, int li)
+{
+	if (fi < li && s[fi] == s[li])
+	{
+		niPalindrome(s, fi + 1, li - 1);
+	}
+	if (s[fi] != s[li])
+	{
+		return (0);
+	}
+	return (1);
+}
+
+/**
 * is_palindrome - checks if string is palindrome or not
 * @s: pointer to string
-* Return: recursion
+* Return: 1 if palindrome otherwise return 0
 */
 
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursion(s);
+	int fi, li;
 
-	return (p1(s, len - 1));
+	fi = 0;
+	li = _strlen_recursion(s) - 1;
+
+	return (niPalindrome(s, fi, li));
 }
+
