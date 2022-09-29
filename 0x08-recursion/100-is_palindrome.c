@@ -46,7 +46,7 @@ int is_palindrome(char *s)
 	int fi, li;
 
 	fi = 0;
-	li = _strlen_recursion(s) + 1;
+	li = _strlen_recursion(s) - 1;
 
 	return (niPalindrome(s, fi, li));
 }
