@@ -26,7 +26,7 @@ int niPalindrome(char *s, int fi, int li)
 {
 	if (fi < li && s[fi] == s[li])
 	{
-		inPalindrome(s, fi + 1, li - 1);
+		niPalindrome(s, fi + 1, li - 1);
 	}
 	if (s[fi] != s[li])
 	{
