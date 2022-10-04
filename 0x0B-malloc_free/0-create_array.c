@@ -3,7 +3,8 @@
 *create_array - array for prints a string
 *@size: number elements array
 *@c: char
-*Return: NUFF
+*Return: pointer
+*NULL if it fails
 */
 
 char *create_array(unsigned int size, char c)
@@ -13,7 +14,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return (NUFF);
+		return (NULL);
 	}
 
 	/*Define values with maloc*/
@@ -21,7 +22,7 @@ char *create_array(unsigned int size, char c)
 
 	if (buffer == 0)
 	{
-		return (NUFF);
+		return (NULL);
 	}
 
 	else
