@@ -5,6 +5,23 @@
 *Return: 1
 */
 
+int _strlen(char *s)
+{
+	unsigned int i;
+
+	i = o;
+	while (s[i] != '\0') /*count character of string*/
+	{
+		i++;
+	}
+
+	/**
+	 *_strcpy - copy arrays
+	 *@src: array of elements
+	 *@dest: dest array
+	 *Reurn: dest
+	 */
+
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -42,3 +59,4 @@ char *_strdup(char *str)
 	}
 	_strcpy(dst, str);
 	return (dst);
+}
