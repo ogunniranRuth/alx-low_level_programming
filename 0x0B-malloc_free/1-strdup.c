@@ -18,12 +18,12 @@ int _strlen(char *s)
 	return (i);
 }
 
-	/**
-	 *_strcpy - copy arrays
-	 *@src: array of elements
-	 *@dest: dest array
-	 *Reurn: dest
-	 */
+/**
+*_strcpy - copy arrays
+*@src: array of elements
+*@dest: dest array
+*Reurn: dest
+*/
 
 char *_strcpy(char *dest, char *src)
 {
