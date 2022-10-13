@@ -35,16 +35,15 @@ void print_all(const char * const format, ...)
 						printf("%f", va_arg(valist, double)), k = 1;
 						break;
 						case 's':
-							str = va_arg(valist, char *), k = 1;
-							if (!str)
-							{
-								printf("(nil)");
-								break;
-							}
+						str = va_arg(valist, char *), k = 1;
+						if (!str)
+						{
+							printf("(nil)");
+							break;
+						}
 						printf("%s", str);
 						break;
-		}
-						i++;
+		} i++;
 	}
 	printf("\n"), va_end(valist);
 }
