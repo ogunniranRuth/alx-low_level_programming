@@ -28,22 +28,22 @@ void print_all(const char * const format, ...)
 			case 'c':
 				printf("%c", va_arg(valist, int)), k = 1;
 				break;
-						case 'i':
-						printf("%d", va_arg(valist, int)), k = 1;
-						break;
-						case 'f':
-						printf("%f", va_arg(valist, double)), k = 1;
-						break;
-						case 's':
-						str = va_arg(valist, char *), k = 1;
-							if (!str)
-							{
-								printf("(nil)");
-								break;
-							}
-						printf("%s", str);
-						break;
+			case 'i':
+				printf("%d", va_arg(valist, int)), k = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(valist, double)), k = 1;
+				break;
+			case 's':
+				str = va_arg(valist, char *), k = 1;
+				if (!str)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", str);
+				break;
 		} i++;
 	}
 	printf("\n"), va_end(valist);
-}
+}	
